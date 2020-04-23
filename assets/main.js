@@ -1,17 +1,3 @@
-//LOADER FUNCTION
-(function ($) {
-    "use strict";
-
-    document.onreadystatechange = function() { 
-    if (document.readyState !== "complete") { 
-        document.querySelector("body").style.visibility = "hidden"; 
-        document.querySelector("#loader_bg").style.visibility = "visible"; 
-    } else { 
-        document.querySelector("#loader_bg").style.display = "none"; 
-        document.querySelector("body").style.visibility = "visible"; 
-    } 
-}; 
-})(jQuery);
 //AMCHART MAP
 am4core.ready(function() {
 
