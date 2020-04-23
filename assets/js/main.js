@@ -16,6 +16,17 @@ am4core.ready(function() {
     
     // Create map polygon series
     var polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
+
+    //Disable Zoom
+    chart.maxZoomLevel = 1;
+
+    //enable scroll
+    chart.chartContainer.wheelable = false;
+
+    //scroll - areas
+    chart.seriesContainer.draggable = false;
+    chart.seriesContainer.resizable = false;
+    chart.tapToActivate = false;
     
     // Exclude Antartica
     polygonSeries.exclude = ["AQ"];
@@ -74,3 +85,5 @@ am4core.ready(function() {
     
     
     }); // end am4core.ready()
+
+//AMCHART
