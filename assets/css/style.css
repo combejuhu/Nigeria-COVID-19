@@ -1,0 +1,281 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+/*END Imports*disc
+
+/* Main */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #212112;
+    padding-top: 73px;
+}
+
+::selection {
+    color: #fff;
+    background-color: #8167a9;
+}
+
+.section-title h4 {
+    font-size: 29px;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+.p-under{
+    font-size:17px;
+    font-style:italic;
+}
+
+/* Lodaer  */
+.loader_bg{
+    position:fixed;
+    z-index:999999;
+    background:#fff;
+    width:100%;
+    height:100%;
+}
+.loader{
+    border: 0 solid transparent;
+    border-radius:50%;
+    width:150px;
+    height:150px;
+    position:absolute;
+    top:calc(50vh - 150px);
+    left:calc(50vw - 75px);
+}
+.loader:before, .loader:after{
+    content:'';
+    border: 1em solid #0076FF;
+    border-radius:50%;
+    width : inherit;
+    height: inherit;
+    position: absolute;
+    top:0;
+    left:0;
+    animation: loader 2s linear infinite;
+    opacity:0;
+}
+.loader:before{
+    animation-delay:.5s;
+}
+@keyframes loader{
+    0%{
+        transform: scale(0);
+        opacity:0;
+    }
+    50%{
+        opacity:1;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+/* Navigation */
+.start-header {
+    opacity: 1;
+    transform: translateY(0);
+    padding: 10px 0;
+    box-shadow: 0 10px 30px 0 rgba(138, 155, 165, 0.15);
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.navigation-wrap {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.navbar-brand img {
+    height: 42px;
+    width: auto;
+    display: block;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.navbar-toggler {
+    float: right;
+    border: none;
+    padding-right: 0;
+}
+
+.navbar-toggler:active,
+.navbar-toggler:focus {
+    outline: none;
+}
+
+.navbar-light .navbar-toggler-icon {
+    width: 24px;
+    height: 17px;
+    background-image: none;
+    position: relative;
+    border-bottom: 1px solid #000;
+    transition: all 300ms linear;
+}
+
+.navbar-light .navbar-toggler-icon:after,
+.navbar-light .navbar-toggler-icon:before {
+    width: 24px;
+    position: absolute;
+    height: 1px;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    content: '';
+    z-index: 2;
+    transition: all 300ms linear;
+}
+
+.navbar-light .navbar-toggler-icon:after {
+    top: 8px;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+    transform: rotate(45deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+    transform: translateY(8px) rotate(-45deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    border-color: transparent;
+}
+
+.nav-link {
+    color: #212121 !important;
+    font-weight: 500;
+    transition: all 200ms linear;
+}
+
+.nav-item:hover .nav-link {
+    color: #1e3799 !important;
+}
+
+.nav-link {
+    position: relative;
+    padding: 5px 0 !important;
+    display: inline-block;
+}
+
+.nav-link {
+    font-size: 16px !important;
+}
+
+.nav-item:after {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    content: '';
+    background-color: #1e3799;
+    opacity: 0;
+    transition: all 200ms linear;
+}
+
+.nav-item:hover:after {
+    bottom: 0;
+    opacity: 1;
+}
+
+.nav-item {
+    position: relative;
+    transition: all 200ms linear;
+}
+
+/* Navigation END */
+
+/*MAP CSS*/
+#chartdiv {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+/* Number */
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+.title-n {
+    margin: 20px;
+    font-weight: 600;
+    font-size: 35px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.card {
+    width: 260px;
+    height: 120px;
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+    transition: 0.8s;
+    box-shadow: 7px 7px 15px rgba(55, 84, 170, 0.15),
+        -7px -7px 20px rgba(255, 255, 255, 1),
+        inset 0px 0px 4px rgba(255, 255, 255, 0.2),
+        inset 7px 7px 15px rgba(55, 84, 170, 0),
+        inset -7px -7px 20px rgba(255, 255, 255, 0),
+        0px 0px 4px rgba(255, 255, 255, 0);
+    transition: 0.8s;
+}
+
+.header .card .stats {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.number {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.factor {
+    color: #a3a3a3;
+}
+
+.active {
+    box-shadow: 2px 3px 5px 0px black;
+}
+
+@media screen and (max-width: 1020px) {
+    .card {
+        width: 100%;
+        height: 150;
+        background: #fff;
+        display: inline-block;
+        margin: 5px 0px !important;
+        text-align: center;
+        transition: 0.8s;
+        box-shadow: 7px 7px 15px rgba(55, 84, 170, 0.15),
+            -7px -7px 20px rgba(255, 255, 255, 1),
+            inset 0px 0px 4px rgba(255, 255, 255, 0.2),
+            inset 7px 7px 15px rgba(55, 84, 170, 0),
+            inset -7px -7px 20px rgba(255, 255, 255, 0),
+            0px 0px 4px rgba(255, 255, 255, 0);
+        transition: 0.8s;
+    }
+
+    .title-n {
+        font-size: 20px;
+    }
+}
