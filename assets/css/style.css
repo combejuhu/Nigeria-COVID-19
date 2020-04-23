@@ -304,3 +304,8 @@ body {
     margin-bottom: 10px;
 }
 }
+@media only screen and (max-width: 1919px) {
+	body {
+		font-size: 20px;
+	}
+}

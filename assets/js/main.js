@@ -1,3 +1,30 @@
+//CALL NUBMERSž
+function citys(value) {
+  if (value == "NORTH CENTRAL") {
+      document.getElementById("callNumbers").innerHTML = ' <div class="container pt-3 d-flex justify-content-center"> <div class="row" style="overflow-x:auto"> <div class="col-xs-12"> <div class="table-responsive"> <table class="table table-bordered table-hover"> <thead> <tr> <th colspan="5" class="text-center">Sarajevski kanton</th> </tr><tr> <th>#</th> <th>Name</th> <th>Number:</th> </tr></thead> <tbody> <tr class="text-center"> <td>1.</td><td>Benue State</td><td>09018602439, 07025031214</td></tr><tr class="text-center"> <td>2.</td><td>Federal Capital Territory</td><td>08099936312, 07080631500</td></tr><tr class="text-center"> <td>3.</td><td>Kogi State</td><td>0704485619, 07088292249, 08150953486, 08095227003, 07043402122</td></tr><tr class="text-center"> <td>4.</td><td>Kwara State</td><td>090620100001, 09062010002</td></tr><tr class="text-center"> <td>5.</td><td>Niger State</td><td>08038246018, 09093093642, 08077213070</td></tr><tr class="text-center"> <td>6.</td><td>Plateau State</td><td>07032864444, 0803542271, 08065486416, 08035779917</td></tr></tbody> <thead> <tr> <th colspan="5" class="text-center">If you have any usefull number regarding COVID feel free to contact us at : info@covid19connectng.orgbr</th> </tr></thead> </table> </div></div></div></div>';
+  } else if (value == "NORTH WEST") {
+      document.getElementById("callNumbers").innerHTML = ' ';
+  } else if (value == "NORTH EAST") {
+      document.getElementById("callNumbers").innerHTML = ' ';
+  } else if (value == "SOUTH SOUTH") {
+      document.getElementById("callNumbers").innerHTML = ' ';
+  } else if (value == "SOUTH EAST") {
+      document.getElementById("callNumbers").innerHTML = ' ';
+  } else if (value == "SOUTH WEST") {
+      document.getElementById("callNumbers").innerHTML = ' ';
+  } else if (value == "Bosanskopodrinjski kanton") {
+      document.getElementById("callNumbers").innerHTML = ' ';
+  } else if (value == "Srednjobosanski kanton") {
+      document.getElementById("callNumbers").innerHTML = ' ';
+  } else if (value == "Republika Srpska") {
+      document.getElementById("callNumbers").innerHTML = ' ';
+  } else {
+      document.getElementById("callNumbers").innerHTML = '<div class="container pt-3 d-flex justify-content-center"><h4>Nemamo informacija vezano za taj grad</h4></div>';
+  }
+}
+
+citys("NORTH CENTRAL")
+
 //AMCHART MAP
 am4core.ready(function() {
 
