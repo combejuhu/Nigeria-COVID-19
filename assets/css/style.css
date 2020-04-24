@@ -197,7 +197,7 @@ body {
     transition: 0.8s;
 }
 
-.header .card .stats {
+.headernumbers .card .stats {
     position: relative;
     top: 50%;
     left: 50%;
