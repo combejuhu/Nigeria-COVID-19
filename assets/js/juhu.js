@@ -1,12 +1,10 @@
-$.get("http://localhost/github/Nigeria-COVID-19/juhu.php", function (data) {
+$.get("http://localhost/github/Nigeria-COVID-19-combe/juhu.php", function (data) {
   var juhu = data.replace("\n", "");
   var juhu = data.split("\n");
 
   array = juhu.filter(function (str) {
     return /\S/.test(str);
   });
-
-  console.log(array[5]);
 
   document.getElementById("total").innerHTML = `<div class="stats">
       <div class="number">${array[3]} </div>

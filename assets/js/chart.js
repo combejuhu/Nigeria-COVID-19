@@ -1,39 +1,83 @@
-anychart.onDocumentReady(function () {
+$.get("http://localhost/github/Nigeria-COVID-19-combe/getCities.php", function (data) {
+  var juhu = data.replace("\n", "");
+  var juhu = data.split("\n");
+
+  array2 = juhu.filter(function (str) {
+    return /\S/.test(str);
+  });
+
+  array2.splice(0, 5);
+  array2.splice(140, 5);
+  array2.splice(-1, 5);
+
+  for (var i = 0; i < array2.length; i++) {
+    array2[i] = array2[i].trim()
+  }
+
+
+  anychart.onDocumentReady(function () {
+
+    blue = "#faff00"
+    //Narandzasta=<50
+    yellow = "#fbba09";
+    //Ljubicasta =<100
+    purple = "#fc7512";
+    //crvena <=500
+    red = "#fd1d1d";
+
+    var dataArray2 = []
+
+    for (var i = 0; i < array2.length - 5; i++) {
+      if (array2[i + 1] < 10) {
+        dataArray2.push([array2[i], array2[i + 1], 1, blue, "#009933", null, {
+          enabled: true
+        }])
+      } else if (array2[i + 1] < 50) {
+        dataArray2.push([array2[i], array2[i + 1], 1, yellow, "#009933", null, {
+          enabled: true
+        }])
+      } else if (array2[i + 1] < 100) {
+        dataArray2.push([array2[i], array2[i + 1], 1, purple, "#009933", null, {
+          enabled: true
+        }])
+      } else {
+        dataArray2.push([array2[i], array2[i + 1], 1, red, "#009933", null, {
+          enabled: true
+        }])
+
+      }
+
+
+      i += 4;
+    }
+
 
     // create a data set
-    var data = anychart.data.set([
-      ["City 1", 1],
-      ["City 2", 2],
-      ["City 3", 3],
-      ["City 4", 4],
-      ["City 5", 5],
-      ["City 6", 6],
-      ["City 7", 7],
-      ["City 8", 8],
-      ["City 9", 9],
-      ["City 10", 10],
-      ["City 11", 11],
-      ["City 12", 12],
-      ["City 13", 13],
-      ["City 14", 14],
-      ["City 15", 15],
-      ["City 16", 16],
-      ["City 17", 27],
-      ["City 18", 32],
-      ["City 19", 44],
-      ["City 20", 51],
-      ["City 21", 53],
-      ["City 22", 65],
-      ["City 23", 87],
-      ["City 24", 96],
-      ["City 25", 120]
-    ]);
+    var data = anychart.data.set(dataArray2);
+
+    var seriesData_1 = data.mapAs({
+      x: 0,
+      value: 1,
+      fill: 3,
+      stroke: 0,
+      label: 20
+    });
 
     // create a chart
     var chart = anychart.column();
 
     // create a bar series and set the data
-    var series = chart.column(data);
+    //    var series = chart.column(data);
+
+    // create the first series, set the data and name
+    var series1 = chart.column(seriesData_1);
+    series1.name("Broj zaraženih");
+    series1.labels(true);
+    labels = series1.labels();
+    labels.position("center-top");
+    labels.anchor("left");
+    /*     series1.name("Broj zaraženih");
+     */
 
     // set the chart title
     chart.title("Nigeria - City's");
@@ -46,7 +90,7 @@ anychart.onDocumentReady(function () {
     var yAxis = chart.yAxis();
     yAxis.title("Number of infected");
 
-    /* chart.xAxis().labels().rotation(-90) */
+    chart.xAxis().labels().rotation(-90)
     xAxis.overlapMode("allowOverlap");
 
     // set the container id
@@ -54,4 +98,6 @@ anychart.onDocumentReady(function () {
 
     // initiate drawing the chart
     chart.draw();
+  });
+
 });
