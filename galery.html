@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/css/lightbox.min.css">
     <title>Nigeria-COVID-19</title>
 </head>
 
@@ -48,7 +47,8 @@
                                     <a class="nav-link" href="donate.html">Donate</a>
                                 </li>
                                 <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                    <a class="nav-link disabled" href="#"> <mark>NCDC TOLL FREE NUMBER : 080097000010</mark></a>
+                                    <a class="nav-link disabled" href="#"> <mark>NCDC TOLL FREE NUMBER :
+                                            080097000010</mark></a>
                                 </li>
                             </ul>
                         </div>
@@ -58,7 +58,128 @@
             </div>
         </div>
     </div>
-    
+    <div class="container pt-3">
+        <div class="row">
+            <div class="main">
+
+                <div id="myBtnContainer">
+                    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                    <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+                    <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+                    <button class="btn" onclick="filterSelection('people')"> People</button>
+                </div>
+
+                <!-- Portfolio Gallery Grid -->
+                <div class="row">
+                    <div class="column nature">
+                        <div class="content">
+                            <div class="gallery">
+                                <a class="example-image-link"
+                                    href="http://lokeshdhakar.com/projects/lightbox2/images/image-1.jpg"
+                                    data-lightbox="example-1"><img class="example-image"
+                                        src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-1.jpg"
+                                        alt="image-1" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column nature">
+                        <div class="content">
+                            <div class="gallery">
+                                <a class="example-image-link"
+                                    href="http://lokeshdhakar.com/projects/lightbox2/images/image-1.jpg"
+                                    data-lightbox="example-1"><img class="example-image"
+                                        src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-1.jpg"
+                                        alt="image-1" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column nature">
+                        <div class="content">
+                            <div class="gallery">
+                                <a class="example-image-link"
+                                    href="http://lokeshdhakar.com/projects/lightbox2/images/image-1.jpg"
+                                    data-lightbox="example-1"><img class="example-image"
+                                        src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-1.jpg"
+                                        alt="image-1" /></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column cars">
+                        <div class="content">
+                            <div class="gallery">
+                                <a class="example-image-link"
+                                    href="http://lokeshdhakar.com/projects/lightbox2/images/image-1.jpg"
+                                    data-lightbox="example-1"><img class="example-image"
+                                        src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-1.jpg"
+                                        alt="image-1" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column cars">
+                        <div class="content">
+                            <div class="gallery">
+                                <a class="example-image-link"
+                                    href="http://lokeshdhakar.com/projects/lightbox2/images/image-1.jpg"
+                                    data-lightbox="example-1"><img class="example-image"
+                                        src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-1.jpg"
+                                        alt="image-1" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column cars">
+                        <div class="content">
+                            <div class="gallery">
+                                <a class="example-image-link"
+                                    href="http://lokeshdhakar.com/projects/lightbox2/images/image-1.jpg"
+                                    data-lightbox="example-1"><img class="example-image"
+                                        src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-1.jpg"
+                                        alt="image-1" /></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column people">
+                        <div class="content">
+                            <div class="gallery">
+                                <a class="example-image-link"
+                                    href="http://lokeshdhakar.com/projects/lightbox2/images/image-1.jpg"
+                                    data-lightbox="example-1"><img class="example-image"
+                                        src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-1.jpg"
+                                        alt="image-1" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column people">
+                        <div class="content">
+                            <div class="gallery">
+                                <a class="example-image-link"
+                                    href="http://lokeshdhakar.com/projects/lightbox2/images/image-1.jpg"
+                                    data-lightbox="example-1"><img class="example-image"
+                                        src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-1.jpg"
+                                        alt="image-1" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column people">
+                        <div class="content">
+                            <div class="gallery">
+                                <a class="example-image-link"
+                                    href="http://lokeshdhakar.com/projects/lightbox2/images/image-1.jpg"
+                                    data-lightbox="example-1"><img class="example-image"
+                                        src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-1.jpg"
+                                        alt="image-1" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END GRID -->
+                </div>
+
+                <!-- END MAIN -->
+            </div>
+        </div>
+    </div>
+
     <!-- FOOTER -->
     <div class="pt-5"></div>
     <section id="footer">
@@ -138,18 +259,9 @@
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-        <!-- AMCHARTS -->
-        <script src="https://www.amcharts.com/lib/4/core.js"></script>
-        <script src="https://www.amcharts.com/lib/4/maps.js"></script>
-        <script src="https://www.amcharts.com/lib/4/geodata/nigeriaLow.js"></script>
-        <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
-        <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-base.min.js"></script>
         <!-- GALERY jS -->
-        <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-        <script src="assets/js/jquery.fancybox.min.js"></script>
-        <!-- Custom jS -->
-        <script src="assets/js/main.js"></script>
-        <script src="assets/js/chart.js"></script>
+        <script src="assets/js/lightbox-plus-jquery.min.js"></script>
+        <script src="assets/js/gallery.js"></script>
 </body>
 
 </html>
