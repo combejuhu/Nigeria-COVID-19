@@ -45,6 +45,9 @@
                                 <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                                     <a class="nav-link" href="donate.html">Donate</a>
                                 </li>
+                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                    <a class="nav-link disabled" href="#"> <mark>NCDC TOLL FREE NUMBER : 080097000010</mark></a>
+                                </li>
                             </ul>
                         </div>
 
@@ -117,6 +120,11 @@
                             <strong>Select State</strong> : <select style="margin-bottom: 30px; width: 300px;"
                                 name="names" onchange="citys(this.value)">
                                 <option value="NORTH CENTRAL">North Central</option>
+                                <option value="NORTH WEST">North West</option>
+                                <option value="NORTH EAST">North East</option>
+                                <option value="SOUTH SOUTH">South South</option>
+                                <option value="SOUTH EAST">South East</option>
+                                <option value="SOUTH WEST">South West</option>
                             </select>
                         </form>
                     </div>
@@ -132,18 +140,17 @@
                 <div class="col-xl-12">
                     <div class="section-title text-center">
                         <h4 class="pt-4">Protection from COVID-19</h4>
-                        <p class="safety-p pb-2">In the video's belowe you can see different ways to protect yourself
-                            from COVID-19</p>
+                        <p class="safety-p pb-2">Bellow you can find different vieos containing information regarding COVID-19</p>
                     </div>
                     <div class="col-md-12">
                         <div class="tabset">
                             <!--Tabs-->
                             <input type="radio" name="tabset" id="tab1" aria-controls="video" checked>
-                            <label for="tab1">Video #1</label>
+                            <label for="tab1">Some Facts About Covid-19</label>
                             <input type="radio" name="tabset" id="tab2" aria-controls="clanak1">
-                            <label for="tab2">Video #2</label>
+                            <label for="tab2">Covid-19 is not Airborne</label>
                             <input type="radio" name="tabset" id="tab3" aria-controls="dodatneInf">
-                            <label for="tab3">Video #3</label>
+                            <label for="tab3">TestingSome Information About Covid-19</label>
                             <!--/Tabs-->
 
                             <div class="tab-panels">
@@ -151,7 +158,8 @@
                                 <section id="vido" class="tab-panel">
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <h4 class="text-center pb-2">Video #1</h4>
+                                            <h4 class="text-center pb-2">Some Facts About Covid-19</h4>
+                                            <hr>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="embed-responsive embed-responsive-16by9">
@@ -167,7 +175,8 @@
                                 <section id="clanak1" class="tab-panel">
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <h4 class="text-center pb-2">Video #2</h4>
+                                            <h4 class="text-center pb-2">Covid-19 is not Airborne - A Message from the Nigeria Centre for Disease Control</h4>
+                                            <hr>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="embed-responsive embed-responsive-16by9">
@@ -183,7 +192,8 @@
                                 <section id="dodatneInf" class="tab-panel">
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <h4 class="text-center pb-2">Video #3</h4>
+                                            <h4 class="text-center pb-2">TestingSome Information About Covid-19 Testing by the Nigeria Centre for Disease Control</h4>
+                                            <hr>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="embed-responsive embed-responsive-16by9">
@@ -249,10 +259,10 @@
                 <div class="col-xs-12 col-sm-4 col-md-2">
                     <h5>Navigation</h5>
                     <ul class="list-unstyled quick-links">
-                        <li><a href="#"><i class="fa fa-angle-double-right"></i>Home</a></li>
-                        <li><a href="#"><i class="fa fa-angle-double-right"></i>Volunteer</a></li>
-                        <li><a href="#"><i class="fa fa-angle-double-right"></i>Galery</a></li>
-                        <li><a href="#"><i class="fa fa-angle-double-right"></i>Donate</a></li>
+                        <li><a href="index.html"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                        <li><a href="volunteer.html"><i class="fa fa-angle-double-right"></i>Volunteer</a></li>
+                        <li><a href="galery.html"><i class="fa fa-angle-double-right"></i>Galery</a></li>
+                        <li><a href="donate.html"><i class="fa fa-angle-double-right"></i>Donate</a></li>
                     </ul>
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-4">
@@ -318,6 +328,7 @@
         <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
         <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-base.min.js"></script>
         <!-- Custom jS -->
+        <script src="assets/js/amchart.js"></script>
         <script src="assets/js/main.js"></script>
         <script src="assets/js/chart.js"></script>
 </body>
