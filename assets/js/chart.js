@@ -1,10 +1,12 @@
-$.get("http://localhost/github/Nigeria-COVID-19-combe/getCities.php", function (data) {
+$.get("http://localhost/github/Nigeria-COVID-19/getCities.php", function (data) {
+  console.log(data)
   var juhu = data.replace("\n", "");
   var juhu = data.split("\n");
 
   array2 = juhu.filter(function (str) {
     return /\S/.test(str);
   });
+  console.log(array2)
 
   array2.splice(0, 5);
   array2.splice(140, 5);

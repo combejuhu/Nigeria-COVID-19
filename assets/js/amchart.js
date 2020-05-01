@@ -127,13 +127,16 @@ am4core.ready(function () {
         })
     }
 
-    $.get("http://localhost/github/Nigeria-COVID-19-combe/getCities.php", function (data) {
+    $.get("http://localhost/github/Nigeria-COVID-19/getCities.php", function (data) {
+
         var juhu = data.replace("\n", "");
         var juhu = data.split("\n");
 
         array3 = juhu.filter(function (str) {
             return /\S/.test(str);
         });
+
+        console.log(array3)
 
         array3.splice(0, 5);
         array3.splice(140, 5);
